@@ -3,12 +3,9 @@
 A = [ x for x in range(5) ]
 B = [ x for x in reversed(range(10)) ]
 
-answer = True
+answer = "A is a subset of B"
 for i in A: 
   if A[i] not in B: 
-    answer = False
+    answer = "A is not a subset of B"
 
-if answer == True:
-    print("A is subset of B")
-else: 
-    print("A is not a subset of B")
+print(answer)
